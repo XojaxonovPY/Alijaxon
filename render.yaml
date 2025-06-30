@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: alijaxon
+    env: docker
+    plan: free
+    branch: main
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
