@@ -7,6 +7,6 @@ services:
     region: oregon
     dockerfilePath: ./Dockerfile
     buildCommand: ""
-    startCommand: "python3 manage.py makemigrations && python3 manage.py migrate && gunicorn root.wsgi:application"
+    startCommand: "python3 manage.py makemigrations apps && python3 manage.py migrate && gunicorn root.wsgi:application"
 
 
