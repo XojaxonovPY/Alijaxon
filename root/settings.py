@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'root.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql',
-        'NAME': 'neondb',
+        'NAME': 'alijahon',
         'USER': 'neondb_owner',
         'PASSWORD': 'npg_Rj1VMPXq5GYE',
         'HOST': 'ep-lively-tree-a8fbqzjn-pooler.eastus2.azure.neon.tech',
