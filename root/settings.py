@@ -124,8 +124,9 @@ USE_TZ = True
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = join(BASE_DIR , 'media')
-STATIC_URL = 'static/'
-STATIC_ROOT = join(BASE_DIR , 'static')
+STATIC_ROOT = join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [join(BASE_DIR, 'static')]
+
 
 
 # ===============================================================
