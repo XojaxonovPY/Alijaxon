@@ -47,19 +47,22 @@ class DistrictAdmin(admin.ModelAdmin):
     ordering = ['region__name', 'name']
 
 
+
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'slug', 'icon_preview']
     search_fields = ['name', 'slug']
-    readonly_fields = ['slug']
-    prepopulated_fields = {'slug': ('name',)}
+    readonly_fields = ['slug']  # ✅ slug foydalanuvchi o‘zgartira olmaydi
+    # ❌ prepopulated_fields = {'slug': ('name',)} ← BUNDA xato edi
 
     def icon_preview(self, obj):
         if obj.icon:
-            return format_html('<img src="{}" width="30" height="30" />', obj.icon)
+            return format_html('<img src="{}" width="30" height="30" />', obj.icon.url)
         return "No Icon"
 
     icon_preview.short_description = 'Icon'
+
 
 
 @admin.register(Product)
