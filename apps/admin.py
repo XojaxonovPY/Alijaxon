@@ -51,52 +51,20 @@ class DistrictAdmin(admin.ModelAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'slug', 'icon_preview']
+    list_display = ['name', 'slug']
     search_fields = ['name', 'slug']
-    readonly_fields = ['slug']  # ✅ slug foydalanuvchi o‘zgartira olmaydi
-    # ❌ prepopulated_fields = {'slug': ('name',)} ← BUNDA xato edi
+    readonly_fields = ['slug']
 
-    def icon_preview(self, obj):
-        if obj.icon:
-            return format_html('<img src="{}" width="30" height="30" />', obj.icon.url)
-        return "No Icon"
-
-    icon_preview.short_description = 'Icon'
 
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'price', 'discount', 'discount_price_display', 'seller_price', 'quantity',
-                    'image_preview']
+    list_display = ['name', 'category', 'price', 'discount', 'seller_price', 'quantity']
     list_filter = ['category', 'discount']
     search_fields = ['name', 'description']
-    readonly_fields = ['slug', 'discount_price_display']
+    readonly_fields = ['slug']
     list_editable = ['price', 'discount', 'quantity']
-
-    fieldsets = (
-        ('Basic Info', {
-            'fields': ('name', 'slug', 'category', 'image', 'description')
-        }),
-        ('Pricing', {
-            'fields': ('price', 'discount', 'discount_price_display', 'seller_price', 'bonus_price')
-        }),
-        ('Inventory & Other', {
-            'fields': ('quantity', 'discount_text', 'telegram_post')
-        }),
-    )
-
-    def image_preview(self, obj):
-        if obj.image:
-            return format_html('<img src="{}" width="50" height="50" />', obj.image.url)
-        return "No Image"
-
-    image_preview.short_description = 'Image'
-
-    def discount_price_display(self, obj):
-        return f"{obj.discount_price:,.0f}"
-
-    discount_price_display.short_description = 'Discount Price'
 
 
 @admin.register(WishList)
@@ -161,39 +129,17 @@ class AdminSettingAdmin(admin.ModelAdmin):
         }),
     )
 
-    def has_add_permission(self, request):
-        # Only allow one AdminSetting instance
-        return not AdminSetting.objects.exists()
 
 
 @admin.register(Payment)
 class PaymentAdmin(admin.ModelAdmin):
-    list_display = ['card_number', 'owner', 'pay_amount', 'pay_status', 'created_at', 'receipt_preview']
+    list_display = ['card_number', 'owner', 'pay_amount', 'pay_status', 'created_at']
     list_filter = ['pay_status', 'created_at']
     search_fields = ['card_number', 'owner__phone_number', 'owner__first_name']
     list_editable = ['pay_status']
     ordering = ['-created_at']
     readonly_fields = ['created_at', 'update_at']
 
-    fieldsets = (
-        ('Payment Info', {
-            'fields': ('card_number', 'pay_amount', 'receipt')
-        }),
-        ('Status & Owner', {
-            'fields': ('owner', 'pay_status', 'message')
-        }),
-        ('Timestamps', {
-            'fields': ('created_at', 'update_at'),
-            'classes': ('collapse',)
-        }),
-    )
-
-    def receipt_preview(self, obj):
-        if obj.receipt:
-            return format_html('<img src="{}" width="50" height="50" />', obj.receipt.url)
-        return "No Receipt"
-
-    receipt_preview.short_description = 'Receipt'
 
 
 # Admin site customization
