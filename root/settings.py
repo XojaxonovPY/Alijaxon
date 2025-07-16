@@ -20,7 +20,6 @@ load_dotenv(join(Base_dir, '.env'))
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -78,18 +77,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'root.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE':'django.db.backends.postgresql',
-        'NAME': 'alijahon',
-        'USER': 'neondb_owner',
-        'PASSWORD': 'npg_Rj1VMPXq5GYE',
-        'HOST': 'ep-lively-tree-a8fbqzjn-pooler.eastus2.azure.neon.tech',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 # Password validation
@@ -110,7 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
@@ -122,10 +115,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [join(BASE_DIR,  'static')]
-STATIC_ROOT = join(BASE_DIR,'apps', 'static')
+STATICFILES_DIRS = [join(BASE_DIR, 'static')]
+STATIC_ROOT = join(BASE_DIR, 'apps', 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = join(BASE_DIR, 'media')

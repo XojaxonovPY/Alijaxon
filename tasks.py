@@ -18,7 +18,7 @@ def apps(c):
 
 @task
 def load(c):
-    c.run("python manage.py loaddata  disdricts.json  regions.json")
+    c.run("python manage.py loaddata  user.json")
 
 
 @task
