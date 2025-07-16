@@ -8,10 +8,11 @@ class AppsConfig(AppConfig):
     def ready(self):
         from apps.models import User
         import apps.signals
+
         SUPER_PHONE = '9987'
         SUPER_PASS = '1'
 
-        if SUPER_PHONE and SUPER_PASS:
+        try:
             if not User.objects.filter(phone_number=SUPER_PHONE).exists():
                 User.objects.create_superuser(
                     phone_number=SUPER_PHONE,
@@ -22,3 +23,5 @@ class AppsConfig(AppConfig):
                 print(f"✅ Superuser created: {SUPER_PHONE}")
             else:
                 print("ℹ️ Superuser already exists.")
+        except Exception as e:
+            print(f"⚠️ Superuser creation skipped: {e}")
