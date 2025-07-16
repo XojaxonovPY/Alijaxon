@@ -1,0 +1,13 @@
+[
+  {
+    "model": "apps.user",
+    "pk": 1,
+    "fields": {
+      "phone_number": "+998901234567",
+      "password": "pbkdf2_sha256$600000$Lu1z4j5HqvjD$Y5+nONIK2Cr12Xsy7Z3kxqB+M1cFMUawRAJmGiT43Ug=",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true
+    }
+  }
+]
