@@ -1,0 +1,326 @@
+[
+  {
+    "model": "apps.product",
+    "pk": 1,
+    "fields": {
+      "slug": "nike-krasofka",
+      "name": "Nike krasofka",
+      "image": "products/krosovka.jpg",
+      "description": "<h2 style=\"font-style:italic\">Juda yaxshi oyoq kiyim</h2>",
+      "price": "200000",
+      "discount": 5,
+      "seller_price": "14000",
+      "bonus_price": "5000",
+      "quantity": 49,
+      "discount_text": "Kop sotganga yana 40000 bonus",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 2
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 2,
+    "fields": {
+      "slug": "bilak-uzuk",
+      "name": "Bilak uzuk",
+      "image": "products/bilakuziuk.jpg",
+      "description": "<h1>juda yaxshi juda tila suv yugurtirilgan</h1>",
+      "price": "145000",
+      "discount": 12,
+      "seller_price": "30000",
+      "bonus_price": "5000",
+      "quantity": 60,
+      "discount_text": "10000",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 5
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 3,
+    "fields": {
+      "slug": "fyodor_dostoyevskiy_jinoyat_va_jazo",
+      "name": "Fyodor_Dostoyevskiy._Jinoyat_va_jazo",
+      "image": "products/Fyodor_Dostoyevskiy._Jinoyat_va_jazo.jpg",
+      "description": "<p>Juda zor kitob</p>",
+      "price": "60000",
+      "discount": 3,
+      "seller_price": "15000",
+      "bonus_price": "8000",
+      "quantity": 35,
+      "discount_text": "yaxshi",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 3
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 4,
+    "fields": {
+      "slug": "airpots-pro-2",
+      "name": "Airpots pro 2",
+      "image": "products/airpods.jpg",
+      "description": "<p><span style=\"font-size:20px\"><span style=\"font-family:Courier New,Courier,monospace\">Zamonaviy quloq<span dir=\"ltr\">chinla</span>r 4000 foyda</span></span></p>",
+      "price": "220000",
+      "discount": 12,
+      "seller_price": "25000",
+      "bonus_price": "13000",
+      "quantity": 40,
+      "discount_text": "Zamonaviy quloqchinlar 4000 foyda",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 6
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 5,
+    "fields": {
+      "slug": "mersedes-gelig-oyinchoq",
+      "name": "Mersedes gelig oyinchoq",
+      "image": "products/mashina.jpg",
+      "description": "<p>Ajoyib mashina haqiqiysini nushasi haqiqiy chidamli</p>",
+      "price": "130000",
+      "discount": 13,
+      "seller_price": "18000",
+      "bonus_price": "80000",
+      "quantity": 45,
+      "discount_text": "Ajoyib mashina haqiqiysini nushasi haqiqiy chidamli",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 1
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 6,
+    "fields": {
+      "slug": "sut",
+      "name": "Sut",
+      "image": "products/sut.jpg",
+      "description": "<p>Yangi kelgan sut</p>",
+      "price": "18000",
+      "discount": 1,
+      "seller_price": "5000",
+      "bonus_price": "3000",
+      "quantity": 60,
+      "discount_text": "Yangi kelgan sut",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 4
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 7,
+    "fields": {
+      "slug": "nike-krasofka-2",
+      "name": "Nike krasofka",
+      "image": "products/krosovka.jpg",
+      "description": "<h2 style=\"font-style:italic\">Juda yaxshi oyoq kiyim</h2>",
+      "price": "200000",
+      "discount": 5,
+      "seller_price": "14000",
+      "bonus_price": "5000",
+      "quantity": 49,
+      "discount_text": "Kop sotganga yana 40000 bonus",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 2
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 8,
+    "fields": {
+      "slug": "nike-krasofka-3",
+      "name": "Nike krasofka",
+      "image": "products/krosovka.jpg",
+      "description": "<h2 style=\"font-style:italic\">Juda yaxshi oyoq kiyim</h2>",
+      "price": "200000",
+      "discount": 5,
+      "seller_price": "14000",
+      "bonus_price": "5000",
+      "quantity": 49,
+      "discount_text": "Kop sotganga yana 40000 bonus",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 2
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 9,
+    "fields": {
+      "slug": "bilak-uzuk-2",
+      "name": "Bilak uzuk",
+      "image": "products/bilakuziuk.jpg",
+      "description": "<h1>juda yaxshi juda tila suv yugurtirilgan</h1>",
+      "price": "145000",
+      "discount": 12,
+      "seller_price": "30000",
+      "bonus_price": "5000",
+      "quantity": 60,
+      "discount_text": "10000",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 5
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 10,
+    "fields": {
+      "slug": "bilak-uzuk-3",
+      "name": "Bilak uzuk",
+      "image": "products/bilakuziuk.jpg",
+      "description": "<h1>juda yaxshi juda tila suv yugurtirilgan</h1>",
+      "price": "145000",
+      "discount": 12,
+      "seller_price": "30000",
+      "bonus_price": "5000",
+      "quantity": 60,
+      "discount_text": "10000",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 5
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 11,
+    "fields": {
+      "slug": "fyodor_dostoyevskiy_jinoyat_va_jazo-2",
+      "name": "Fyodor_Dostoyevskiy._Jinoyat_va_jazo",
+      "image": "products/Fyodor_Dostoyevskiy._Jinoyat_va_jazo.jpg",
+      "description": "<p>Juda zor kitob</p>",
+      "price": "60000",
+      "discount": 3,
+      "seller_price": "15000",
+      "bonus_price": "8000",
+      "quantity": 35,
+      "discount_text": "yaxshi",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 3
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 12,
+    "fields": {
+      "slug": "fyodor_dostoyevskiy_jinoyat_va_jazo-3",
+      "name": "Fyodor_Dostoyevskiy._Jinoyat_va_jazo",
+      "image": "products/Fyodor_Dostoyevskiy._Jinoyat_va_jazo.jpg",
+      "description": "<p>Juda zor kitob</p>",
+      "price": "60000",
+      "discount": 3,
+      "seller_price": "15000",
+      "bonus_price": "8000",
+      "quantity": 35,
+      "discount_text": "yaxshi",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 3
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 13,
+    "fields": {
+      "slug": "airpots-pro-2-2",
+      "name": "Airpots pro 2",
+      "image": "products/airpods.jpg",
+      "description": "<p><span style=\"font-size:20px\"><span style=\"font-family:Courier New,Courier,monospace\">Zamonaviy quloq<span dir=\"ltr\">chinla</span>r 4000 foyda</span></span></p>",
+      "price": "220000",
+      "discount": 12,
+      "seller_price": "25000",
+      "bonus_price": "13000",
+      "quantity": 40,
+      "discount_text": "Zamonaviy quloqchinlar 4000 foyda",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 6
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 14,
+    "fields": {
+      "slug": "airpots-pro-2-3",
+      "name": "Airpots pro 2",
+      "image": "products/airpods.jpg",
+      "description": "<p><span style=\"font-size:20px\"><span style=\"font-family:Courier New,Courier,monospace\">Zamonaviy quloq<span dir=\"ltr\">chinla</span>r 4000 foyda</span></span></p>",
+      "price": "220000",
+      "discount": 12,
+      "seller_price": "25000",
+      "bonus_price": "13000",
+      "quantity": 40,
+      "discount_text": "Zamonaviy quloqchinlar 4000 foyda",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 6
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 15,
+    "fields": {
+      "slug": "mersedes-gelig-oyinchoq-2",
+      "name": "Mersedes gelig oyinchoq",
+      "image": "products/mashina.jpg",
+      "description": "<p>Ajoyib mashina haqiqiysini nushasi haqiqiy chidamli</p>",
+      "price": "130000",
+      "discount": 13,
+      "seller_price": "18000",
+      "bonus_price": "80000",
+      "quantity": 45,
+      "discount_text": "Ajoyib mashina haqiqiysini nushasi haqiqiy chidamli",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 1
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 16,
+    "fields": {
+      "slug": "mersedes-gelig-oyinchoq-3",
+      "name": "Mersedes gelig oyinchoq",
+      "image": "products/mashina.jpg",
+      "description": "<p>Ajoyib mashina haqiqiysini nushasi haqiqiy chidamli</p>",
+      "price": "130000",
+      "discount": 13,
+      "seller_price": "18000",
+      "bonus_price": "80000",
+      "quantity": 45,
+      "discount_text": "Ajoyib mashina haqiqiysini nushasi haqiqiy chidamli",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 1
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 17,
+    "fields": {
+      "slug": "sut-2",
+      "name": "Sut",
+      "image": "products/sut.jpg",
+      "description": "<p>Yangi kelgan sut</p>",
+      "price": "18000",
+      "discount": 1,
+      "seller_price": "5000",
+      "bonus_price": "3000",
+      "quantity": 60,
+      "discount_text": "Yangi kelgan sut",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 4
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 18,
+    "fields": {
+      "slug": "sut-3",
+      "name": "Sut",
+      "image": "products/sut.jpg",
+      "description": "<p>Yangi kelgan sut</p>",
+      "price": "18000",
+      "discount": 1,
+      "seller_price": "5000",
+      "bonus_price": "3000",
+      "quantity": 60,
+      "discount_text": "Yangi kelgan sut",
+      "telegram_post": "https://t.me/Gorinhas",
+      "category": 4
+    }
+  }
+]

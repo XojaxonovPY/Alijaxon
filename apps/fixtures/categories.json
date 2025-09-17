@@ -1,0 +1,56 @@
+[
+  {
+    "model": "apps.category",
+    "pk": 1,
+    "fields": {
+      "slug": "oyinchoqlar",
+      "name": "Oyinchoqlar",
+      "icon": "https://img.icons8.com/external-goofy-flat-kerismaker/96/external-Toys-groceries-goofy-flat-kerismaker.png"
+    }
+  },
+  {
+    "model": "apps.category",
+    "pk": 2,
+    "fields": {
+      "slug": "poyabzallar",
+      "name": "Poyabzallar",
+      "icon": "https://img.icons8.com/external-line-lima-studio/64/external-shoes-sale-line-lima-studio-2.png"
+    }
+  },
+  {
+    "model": "apps.category",
+    "pk": 3,
+    "fields": {
+      "slug": "kitoblar",
+      "name": "Kitoblar",
+      "icon": "https://img.icons8.com/nolan/64/books-1.png"
+    }
+  },
+  {
+    "model": "apps.category",
+    "pk": 4,
+    "fields": {
+      "slug": "oziq-ovqat",
+      "name": "Oziq-ovqat",
+      "icon": "https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-board-supermarket-flatart-icons-outline-flatarticons.png"
+    }
+  },
+  {
+    "model": "apps.category",
+    "pk": 5,
+    "fields": {
+      "slug": "akssesuarlar",
+      "name": "Akssesuarlar",
+      "icon": "https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/external-accessories-clothes-and-outfit-victoruler-linear-colour-victoruler.png"
+    }
+  },
+  {
+    "model": "apps.category",
+    "pk": 6,
+    "fields": {
+      "slug": "elektronika",
+      "name": "Elektronika",
+      "icon": "https://img.icons8.com/ios-filled/50/multiple-devices.png"
+    }
+  }
+]

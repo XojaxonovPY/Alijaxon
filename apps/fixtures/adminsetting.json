@@ -1,0 +1,13 @@
+[
+  {
+    "model": "apps.adminsetting",
+    "pk": 1,
+    "fields": {
+      "deliver_price": "25000",
+      "competition_thumbnail_img": "competition/������_������_2025-09-17_155453.png",
+      "competition_description": "<h3>Alijahon.uz</h3>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Alijahon.uz sayti navbatdagi konkursiga<br />\r\nStart bermoqda&nbsp;</p>\r\n\r\n<p>Tanlovda adashmang !!!!</p>\r\n\r\n<p>Biz sizlarni qullab quvvatlashda davom etamiz</p>\r\n\r\n<p>1-maydan 30 noyabrga qadar davom etadi&nbsp;</p>",
+      "start_competition": "2025-05-01",
+      "end_competition": "2025-11-30"
+    }
+  }
+]
