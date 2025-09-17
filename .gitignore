@@ -4,3 +4,4 @@ test.py
 TODO
 .env
 media
+db.sqlite3
