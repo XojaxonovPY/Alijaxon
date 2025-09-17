@@ -22,7 +22,7 @@
             </div>
             <div class="card-body bg-light">
 
-                <form class="row g-3" method="post" action="{% url 'profile' request.user.pk %}"
+                <form class="row g-3" method="post" action="{% url 'profile_update' request.user.pk %}"
                       enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="col-lg-6">

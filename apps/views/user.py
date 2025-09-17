@@ -6,7 +6,7 @@ from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse_lazy, reverse
 from django.views import View
-from django.views.generic import ListView, FormView, UpdateView
+from django.views.generic import ListView, FormView, UpdateView, DetailView
 
 from apps.forms import AuthForm, ProfileModelForm, PasswordForm
 from apps.models import User, Region, District, WishList
@@ -31,6 +31,12 @@ class AuthFormView(FormView):
         for error in form.errors.values():
             messages.error(self.request, error)
         return super().form_invalid(form)
+
+
+class ProfileDetailView(LoginRequiredMixin, DetailView):
+    queryset = User.objects.all()
+    template_name = 'apps/auth/profile.html'
+    pk_url_kwarg = "pk"
 
 
 class ProfileUpdateView(LoginRequiredMixin, UpdateView):
